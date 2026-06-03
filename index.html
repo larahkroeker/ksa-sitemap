@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- LKI Favicon — sourced from global-assets repo -->
+  <link rel="icon" type="image/svg+xml" href="https://raw.githubusercontent.com/Lara-Kroeker-Interactive/global-assets/main/Logo/Favicon/favicon.svg">
+  <link rel="icon" type="image/png" sizes="96x96" href="https://raw.githubusercontent.com/Lara-Kroeker-Interactive/global-assets/main/Logo/Favicon/favicon-96x96.png">
+  <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/Lara-Kroeker-Interactive/global-assets/main/Logo/Favicon/apple-touch-icon.png">
+  <title>KSA Sitemap</title>
+  <style>
+    :root { --bg:#f4f7fb; --card:#fff; --ink:#13253b; --muted:#58708b; --line:#d7e1ec; --accent:#0a7a63; --accent2:#f0faf7; --cert:#e7f3ff; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter,Segoe UI,Arial,sans-serif; background:linear-gradient(180deg,#eef4ff, #f4f7fb 180px); color:var(--ink); }
+    .wrap { max-width:1400px; margin:0 auto; padding:28px 20px 48px; }
+    h1 { margin:0 0 6px; font-size:clamp(1.8rem,2.8vw,2.4rem); }
+    .meta { color:var(--muted); margin:0 0 16px; }
+    .hero-diagram { margin:0 0 20px; padding:18px; overflow:auto; }
+    .hero-diagram h2 { margin:0 0 8px; font-size:1.05rem; }
+    .hero-diagram .meta { margin:0 0 14px; }
+    .mermaid { min-width:0; text-align:center; }
+    .mermaid svg { display:block; max-width:100%; height:auto; margin:0 auto; }
+    .stats { display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:12px; margin-bottom:16px; }
+    .stat { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:12px 14px; box-shadow:0 6px 20px rgba(19,37,59,.05); }
+    .stat .k { color:var(--muted); font-size:.78rem; text-transform:uppercase; letter-spacing:.05em; }
+    .stat .v { font-size:1.4rem; font-weight:700; margin-top:4px; }
+    .grid { display:grid; grid-template-columns:1.2fr .9fr; gap:14px; align-items:start; }
+    @media (max-width: 980px) { .grid { grid-template-columns:1fr; } }
+    .panel { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:14px; box-shadow:0 8px 24px rgba(19,37,59,.05); }
+    .panel h2 { margin:0 0 10px; font-size:1.05rem; }
+    .tree { max-height:78vh; overflow:auto; padding-right:8px; }
+    details { border-left:2px solid var(--line); margin:0 0 8px 6px; padding-left:10px; }
+    summary { cursor:pointer; list-style:none; margin-left:-6px; padding:4px 0; }
+    summary::-webkit-details-marker { display:none; }
+    summary::before { content:"▸"; display:inline-block; width:1em; color:var(--muted); }
+    details[open] > summary::before { content:"▾"; }
+    .link { color:#11447a; text-decoration:none; margin-right:6px; }
+    .link:hover { text-decoration:underline; }
+    .badge { display:inline-block; margin-left:6px; padding:1px 7px; border-radius:999px; font:600 .72rem/1.4 ui-monospace, SFMono-Regular, Menlo, monospace; background:var(--cert); color:#24507a; border:1px solid #c7dcf2; vertical-align:middle; }
+    .cert { background:var(--accent2); color:#06614e; border:1px solid #b8e4d5; padding:1px 8px; border-radius:999px; font-size:.76rem; }
+    .mini { margin:4px 0 0 16px; color:var(--muted); font-size:.88rem; }
+    .section-label { margin:10px 0 4px 16px; font-size:.78rem; color:var(--muted); text-transform:uppercase; letter-spacing:.06em; }
+    .child { margin-left:16px; margin-bottom:4px; }
+    table { width:100%; border-collapse:collapse; font-size:.9rem; }
+    th, td { text-align:left; padding:8px 6px; border-bottom:1px solid var(--line); vertical-align:top; }
+    th { color:var(--muted); font-weight:600; }
+    .orphs { display:grid; gap:10px; margin-top:8px; }
+    .orph { border:1px solid var(--line); border-radius:14px; padding:10px; background:#fbfdff; }
+    .orph h3 { margin:0 0 6px; font-size:.95rem; }
+    .orph ul { margin:0; padding-left:18px; max-height:200px; overflow:auto; }
+    .muted { color:var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>KSA Sitemap</h1>
+    <p class="meta">https://ksaconsultinginccom.local/ • generated 2026-06-03T22:20:50+00:00</p>
+    <section class="panel hero-diagram" aria-labelledby="visual-sitemap-heading">
+      <h2 id="visual-sitemap-heading">Visual Sitemap</h2>
+      <p class="meta">High-level site structure shown as a Mermaid diagram.</p>
+      <div class="mermaid">
+flowchart TD
+    KSA[KSA Website]
+    Home[Home]
+    About[About]
+    Services[Services]
+    Contact[Contact]
+    Courses[Courses]
+    SingleCourse[Single Course]
+    SingleLesson[Single Lesson]
+    SingleQuiz[Single Quiz]
+    Account[My Account]
+    Login[Login]
+    MyCourses[My Courses]
+    Cart[Cart]
+    Checkout[Checkout]
+    OrderConfirmation[Order Confirmation]
+    Blog[Blog]
+    BlogPost[Blog Post]
+
+    KSA --> Home
+    KSA --> About
+    KSA --> Services
+    KSA --> Contact
+    KSA --> Courses
+    KSA --> Account
+    KSA --> Cart
+    KSA --> Checkout
+    KSA --> OrderConfirmation
+    KSA --> Blog
+
+    Courses --> SingleCourse
+    SingleCourse --> SingleLesson
+    SingleCourse --> SingleQuiz
+    Account --> Login
+    Account --> MyCourses
+    Blog --> BlogPost
+      </div>
+    </section>
+    <div class="stats">
+      <div class="stat"><div class="k">Courses</div><div class="v">17</div></div>
+      <div class="stat"><div class="k">Lessons</div><div class="v">146</div></div>
+      <div class="stat"><div class="k">Topics</div><div class="v">0</div></div>
+      <div class="stat"><div class="k">Quizzes</div><div class="v">0</div></div>
+      <div class="stat"><div class="k">Questions</div><div class="v">0</div></div>
+      <div class="stat"><div class="k">Cert refs</div><div class="v">16</div></div>
+      <div class="stat"><div class="k">Woo links</div><div class="v">17</div></div>
+    </div>
+    <div class="grid">
+      <div class="panel">
+        <h2>Courses / Lessons / Topics / Quizzes</h2>
+        <div class="tree"><details class="course" open>
+  <summary><a class="link" href="https://ksaconsultinginccom.local/courses/addressing-fraud-risk-in-assurance-engagements/" target="_blank" rel="noopener noreferrer">Course: Addressing Fraud Risk</a> <span class="badge">#2437</span></summary>
+  <div class="mini">Course certificate: <span class="cert">#2998</span></div>
+  <div class="section-label">Lessons</div>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/examination-of-the-fraud-triangle-and-the-conditions-that-lead-to-fraud/" target="_blank" rel="noopener noreferrer">Lesson: Examination of the “fraud triangle” and the conditions that lead to fraud</a> <span class="badge">#2440</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/review-of-fraud-statistics-related-to-small-businesses-and-how-clients-may-be-impacted/" target="_blank" rel="noopener noreferrer">Lesson: Review of fraud statistics related to small businesses and how clients may be impacted</a> <span class="badge">#2442</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/maintaining-an-attitude-of-professional-skepticism/" target="_blank" rel="noopener noreferrer">Lesson: Maintaining an attitude of professional skepticism</a> <span class="badge">#2444</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/developing-and-performing-required-procedures-to-address-the-risk/" target="_blank" rel="noopener noreferrer">Lesson: Developing and performing required procedures to address risk</a> <span class="badge">#2446</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/extending-engagement-procedures-and-determining-impact-on-engagement-report/" target="_blank" rel="noopener noreferrer">Lesson: Extending engagement procedures and determining impact on engagement report</a> <span class="badge">#2448</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/review-of-key-points-and-action-planning-5/" target="_blank" rel="noopener noreferrer">Lesson: Review of key points and action planning</a> <span class="badge">#2450</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/course-material/" target="_blank" rel="noopener noreferrer">Lesson: Course material: Course slides &amp;#038; links to ACFE Report to the Nations</a> <span class="badge">#2452</span></summary>
+  </details>
+</details>
+<details class="course" open>
+  <summary><a class="link" href="https://ksaconsultinginccom.local/courses/agreed-upon-procedures-csrs-4400/" target="_blank" rel="noopener noreferrer">Course: Agreed Upon Procedures: CSRS 4400</a> <span class="badge">#2035</span></summary>
+  <div class="mini">Course certificate: <span class="cert">#2998</span></div>
+  <div class="section-label">Lessons</div>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/understand-the-practitioners-objectives-and-scope-of-csrs-4200/" target="_blank" rel="noopener noreferrer">Lesson: Understand the practitioner’s objectives and scope of CSRS 4200</a> <span class="badge">#2662</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/appreciate-requirements-related-to-accepting-or-continuing-an-aup-engagement/" target="_blank" rel="noopener noreferrer">Lesson: Appreciate requirements related to accepting or continuing an AUP engagement</a> <span class="badge">#2664</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/develop-procedures-that-can-be-described-objectively-and-are-not-subject-to-interpretations/" target="_blank" rel="noopener noreferrer">Lesson: Develop procedures that can be described objectively and are not subject to interpretations</a> <span class="badge">#2666</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/report-findings-and-exceptions-based-on-the-procedures-performed/" target="_blank" rel="noopener noreferrer">Lesson: Report findings and exceptions based on the procedures performed</a> <span class="badge">#2668</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/practical-application-related-to-documenting-nature-timing-and-extent-of-procedures/" target="_blank" rel="noopener noreferrer">Lesson: Practical application related to documenting nature, timing and extent of procedures</a> <span class="badge">#2670</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/review-of-key-points-and-action-planning-9/" target="_blank" rel="noopener noreferrer">Lesson: Review of key points and action planning</a> <span class="badge">#2673</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/csrs-4400-course-material/" target="_blank" rel="noopener noreferrer">Lesson: Course Material: Course slides &amp;#038; links to CPA Canada relevant resources</a> <span class="badge">#2675</span></summary>
+  </details>
+</details>
+<details class="course" open>
+  <summary><a class="link" href="https://ksaconsultinginccom.local/courses/audit-hot-topics/" target="_blank" rel="noopener noreferrer">Course: Audit Hot Topics</a> <span class="badge">#7166</span></summary>
+  <div class="mini">Course certificate: <span class="cert">#3005</span></div>
+  <div class="section-label">Lessons</div>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/overview-of-audit-basics/" target="_blank" rel="noopener noreferrer">Lesson: Overview of audit basics</a> <span class="badge">#7179</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/addressing-the-risk-of-fraud-cas-240-2/" target="_blank" rel="noopener noreferrer">Lesson: Addressing the risk of fraud (CAS 240)</a> <span class="badge">#7181</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/system-of-internal-control-cas-315/" target="_blank" rel="noopener noreferrer">Lesson: Components of a system of internal control and related requirements (CAS 315)</a> <span class="badge">#7177</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/identifying-and-assessing-the-risk-of-material-misstatement-cas-315-cas-240/" target="_blank" rel="noopener noreferrer">Lesson: Identifying and assessing the risk of material misstatement (CAS 240 &amp;#038; CAS 315)</a> <span class="badge">#7183</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/auditors-response-and-documentation-cas-230-cas-330-cas-500-2/" target="_blank" rel="noopener noreferrer">Lesson: Auditor’s response and documentation (CAS 230, CAS 330 &amp;#038; CAS 500)</a> <span class="badge">#7191</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/audit-sampling-cas-530-2/" target="_blank" rel="noopener noreferrer">Lesson: Audit sampling (CAS 530)</a> <span class="badge">#7193</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/auditing-accounting-estimates-and-related-disclosures-cas-540/" target="_blank" rel="noopener noreferrer">Lesson: Auditing accounting estimates and related disclosures (CAS 540)</a> <span class="badge">#7195</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/reporting-and-communicating-cas-700-cas-705-cas-706-cas-260/" target="_blank" rel="noopener noreferrer">Lesson: Reporting and communicating (CAS 700, CAS 705, CAS 706 &amp;#038; CAS 260)</a> <span class="badge">#7197</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/review-of-key-points-and-action-planning-13/" target="_blank" rel="noopener noreferrer">Lesson: Review of key points and action planning</a> <span class="badge">#7199</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/cas-resources/" target="_blank" rel="noopener noreferrer">Lesson: Audit Hot Topics Resources: Course slides and links to other relevant resources</a> <span class="badge">#7390</span></summary>
+  </details>
+</details>
+<details class="course" open>
+  <summary><a class="link" href="https://ksaconsultinginccom.local/courses/compilation-hot-topics-csrs-4200/" target="_blank" rel="noopener noreferrer">Course: Compilation Hot Topics (CSRS 4200)</a> <span class="badge">#7161</span></summary>
+  <div class="mini">Course certificate: <span class="cert">#2998</span></div>
+  <div class="section-label">Lessons</div>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/ksa-5-overview-of-the-practitioners-objectives-and-refresher-of-basic-review-concepts/" target="_blank" rel="noopener noreferrer">Lesson: Overview of the practitioner’s objectives and professional requirements</a> <span class="badge">#7275</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/scope-exclusions/" target="_blank" rel="noopener noreferrer">Lesson: Scope exclusions</a> <span class="badge">#7277</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/client-acceptance-and-continuance/" target="_blank" rel="noopener noreferrer">Lesson: Client acceptance and continuance</a> <span class="badge">#7279</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/basis-of-accounting/" target="_blank" rel="noopener noreferrer">Lesson: Basis of accounting</a> <span class="badge">#7281</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/knowledge-of-the-entity/" target="_blank" rel="noopener noreferrer">Lesson: Knowledge of the entity</a> <span class="badge">#7283</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/compiling-the-financial-information/" target="_blank" rel="noopener noreferrer">Lesson: Compiling the financial information</a> <span class="badge">#7285</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/ksa-5-documentation/" target="_blank" rel="noopener noreferrer">Lesson: Documentation</a> <span class="badge">#7287</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/review-of-key-points-and-action-planning-12/" target="_blank" rel="noopener noreferrer">Lesson: Review of key points and action planning</a> <span class="badge">#7289</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/csrs-4200-course-material/" target="_blank" rel="noopener noreferrer">Lesson: CSRS 4200 course material: Course slides and links to other relevant resources</a> <span class="badge">#7291</span></summary>
+  </details>
+</details>
+<details class="course" open>
+  <summary><a class="link" href="https://ksaconsultinginccom.local/courses/csqm-in-action/" target="_blank" rel="noopener noreferrer">Course: Design. Implement. Monitor: CSQM 1 in Action a Guided Workshop</a> <span class="badge">#9318</span></summary>
+  <div class="section-label">Lessons</div>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/1-1-csqm-1-and-sqmt-overview/" target="_blank" rel="noopener noreferrer">Lesson: 1.1 CSQM 1 and SQMT Overview</a> <span class="badge">#9325</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/1-2-sqmt-installation-files-and-user-guide/" target="_blank" rel="noopener noreferrer">Lesson: 1.2 SQMT Installation Files and User Guide</a> <span class="badge">#9327</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/2-1-sqmt-setup-entering-firm-details/" target="_blank" rel="noopener noreferrer">Lesson: 2.1 SQMT Setup – Entering Firm Details</a> <span class="badge">#9330</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/2-2-sqmt-setup-inputting-system-roles/" target="_blank" rel="noopener noreferrer">Lesson: 2.2 SQMT Setup – Inputting System Roles</a> <span class="badge">#9332</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/2-3-sqmt-setup-understanding-external-linked-files-register/" target="_blank" rel="noopener noreferrer">Lesson: 2.3 SQMT Setup – Understanding External Linked Files Register</a> <span class="badge">#9334</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/2-4-sqmt-setup-understanding-category-and-drop-down-options/" target="_blank" rel="noopener noreferrer">Lesson: 2.4 SQMT Setup – Understanding Category and Drop-down Options</a> <span class="badge">#9336</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/2-5-sqmt-setup-using-the-glossary/" target="_blank" rel="noopener noreferrer">Lesson: 2.5 SQMT Setup – Using the Glossary</a> <span class="badge">#9338</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/3-1-quality-objectives-overview/" target="_blank" rel="noopener noreferrer">Lesson: 3.1 Quality Objectives Overview</a> <span class="badge">#9340</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/4-1-risk-identification-preparation-and-tailoring-risk-register-in-sqmt/" target="_blank" rel="noopener noreferrer">Lesson: 4.1 Risk Identification Preparation and tailoring Risk Register in SQMT</a> <span class="badge">#9342</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/5-1-tailoring-policies-and-procedures-in-sqmt/" target="_blank" rel="noopener noreferrer">Lesson: 5.1 Tailoring Policies and Procedures in SQMT</a> <span class="badge">#9344</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/6-1-adding-monitoring-policies-and-procedures-and-populating-the-to-do-list/" target="_blank" rel="noopener noreferrer">Lesson: 6.1 Adding Monitoring Policies and Procedures and Populating the To Do List</a> <span class="badge">#9346</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/6-2-next-steps-video/" target="_blank" rel="noopener noreferrer">Lesson: 6.2 Next Steps Video</a> <span class="badge">#9348</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/6-3-completed-monitoring-plan-example/" target="_blank" rel="noopener noreferrer">Lesson: 6.3 Completed Monitoring Plan Example</a> <span class="badge">#9350</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/6-4-evaluation-wording-for-sqmt/" target="_blank" rel="noopener noreferrer">Lesson: 6.4 Evaluation Wording for SQMT</a> <span class="badge">#9352</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/7-1-reports-in-sqmt/" target="_blank" rel="noopener noreferrer">Lesson: 7.1 Reports in SQMT</a> <span class="badge">#9354</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/7-2-what-to-send-in-for-practice-inspection/" target="_blank" rel="noopener noreferrer">Lesson: 7.2 What to send in for Practice Inspection</a> <span class="badge">#9356</span></summary>
+  </details>
+</details>
+<details class="course" open>
+  <summary><a class="link" href="https://ksaconsultinginccom.local/courses/effective-and-efficient-audits-journal-entry-testing/" target="_blank" rel="noopener noreferrer">Course: Effective and Efficient Journal Entry Testing</a> <span class="badge">#657</span></summary>
+  <div class="mini">Course certificate: <span class="cert">#3003</span></div>
+  <div class="section-label">Lessons</div>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/introduction-and-overview-of-je-testing-and-cas-requirements/" target="_blank" rel="noopener noreferrer">Lesson: Introduction and overview of JE testing and CAS requirements</a> <span class="badge">#866</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/step-1-understand-and-make-inquiries-related-to-the-journal-entry-process/" target="_blank" rel="noopener noreferrer">Lesson: Step 1:  Understand and make inquiries related to the journal entry process</a> <span class="badge">#872</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/step-2-identify-and-determine-the-selection-criteria/" target="_blank" rel="noopener noreferrer">Lesson: Step 2:  Identify and determine the selection criteria</a> <span class="badge">#878</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/step-3-test-the-journal-entries-selected/" target="_blank" rel="noopener noreferrer">Lesson: Step 3:  Test the journal entries selected</a> <span class="badge">#882</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/document-the-results-and-conclude-including-practical-application-and-examples/" target="_blank" rel="noopener noreferrer">Lesson: Document the results and conclude including practical application and examples</a> <span class="badge">#884</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/review-of-key-points-and-action-planning-2/" target="_blank" rel="noopener noreferrer">Lesson: Review of key points and action planning</a> <span class="badge">#891</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/journal-entry-testing-course-material/" target="_blank" rel="noopener noreferrer">Lesson: Course Material: Course slides, Sample documentation &amp;#038; links to CPA Canada relevant resources</a> <span class="badge">#893</span></summary>
+  </details>
+</details>
+<details class="course" open>
+  <summary><a class="link" href="https://ksaconsultinginccom.local/courses/identifying-and-assessing-the-risks-of-material-misstatement-cas-315/" target="_blank" rel="noopener noreferrer">Course: Identifying and Assessing RMM (CAS 315)</a> <span class="badge">#7167</span></summary>
+  <div class="mini">Course certificate: <span class="cert">#3003</span></div>
+  <div class="section-label">Lessons</div>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/cas-315-overview-and-review-of-key-audit-concepts/" target="_blank" rel="noopener noreferrer">Lesson: CAS 315 overview and review of key audit concepts</a> <span class="badge">#7229</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/inquiries-preliminary-analytical-procedures-and-engagement-team-discussions/" target="_blank" rel="noopener noreferrer">Lesson: Inquiries with management and TCWG, preliminary analytical procedures and engagement team discussions</a> <span class="badge">#7231</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/understanding-the-nature-of-the-entity-its-business-model-and-the-afrf/" target="_blank" rel="noopener noreferrer">Lesson: Understanding the nature of the entity, its business model and the AFRF</a> <span class="badge">#7358</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/control-environment-risk-assessment-process-and-monitoring/" target="_blank" rel="noopener noreferrer">Lesson: Control environment, risk assessment process and monitoring</a> <span class="badge">#7233</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/information-system-and-communication-and-control-activities/" target="_blank" rel="noopener noreferrer">Lesson: Information system and communication and control activities</a> <span class="badge">#7235</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/identifying-and-assessing-rmm-at-the-financial-statement-level-and-assertion-level/" target="_blank" rel="noopener noreferrer">Lesson: Identifying and assessing RMM at the financial statement level and assertion level</a> <span class="badge">#7237</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/stand-back-procedures-to-evaluate-audit-evidence-from-rap/" target="_blank" rel="noopener noreferrer">Lesson: Stand-back procedures to evaluate audit evidence from RAP</a> <span class="badge">#7239</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/review-of-key-concepts-and-action-planning-2/" target="_blank" rel="noopener noreferrer">Lesson: Review of key concepts and action planning</a> <span class="badge">#7241</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/cas-315-resources-course-slides-and-links-to-other-relevant-resources/" target="_blank" rel="noopener noreferrer">Lesson: CAS 315 Resources: Course slides and links to other relevant resources</a> <span class="badge">#7243</span></summary>
+  </details>
+</details>
+<details class="course" open>
+  <summary><a class="link" href="https://ksaconsultinginccom.local/courses/path-to-implementation-csqm-1/" target="_blank" rel="noopener noreferrer">Course: Path to Implementation: CSQM 1</a> <span class="badge">#4196</span></summary>
+  <div class="mini">Course certificate: <span class="cert">#2222</span></div>
+  <div class="section-label">Lessons</div>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/1-0-additional-sqmt-users/" target="_blank" rel="noopener noreferrer">Lesson: 1.0 Additional SQMT Users</a> <span class="badge">#4198</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/1-1-introduction-2/" target="_blank" rel="noopener noreferrer">Lesson: 1.1 CSQM 1 Overview</a> <span class="badge">#4197</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/1-2-roles-and-responsibilities-2/" target="_blank" rel="noopener noreferrer">Lesson: 1.2  Workshop Overview</a> <span class="badge">#4199</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/2-1-sqm-toolkit-database-sqmt-overview/" target="_blank" rel="noopener noreferrer">Lesson: 2.1 SQM Toolkit Database (SQMT) Overview</a> <span class="badge">#4202</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/2-2-installing-the-sqmt/" target="_blank" rel="noopener noreferrer">Lesson: 2.2 Installing the SQMT</a> <span class="badge">#4203</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/2-3-sqmt-overview-entering-firm-details/" target="_blank" rel="noopener noreferrer">Lesson: 2.3 SQMT Overview – Entering Firm Details</a> <span class="badge">#4204</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/2-4-sqmt-overview-inputting-system-roles/" target="_blank" rel="noopener noreferrer">Lesson: 2.4 SQMT Overview – Inputting System Roles</a> <span class="badge">#4205</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/2-5-sqmt-overview-understanding-the-to-do-list/" target="_blank" rel="noopener noreferrer">Lesson: 2.5 SQMT Overview – Understanding the To Do List</a> <span class="badge">#4206</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/2-6-sqmt-overview-understanding-external-linked-files-register/" target="_blank" rel="noopener noreferrer">Lesson: 2.6 SQMT Overview – Understanding External Linked Files Register</a> <span class="badge">#4239</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/2-7-sqmt-overview-understanding-category-and-drop-down-options/" target="_blank" rel="noopener noreferrer">Lesson: 2.7 SQMT Overview – Understanding Category and Drop-down Options</a> <span class="badge">#4207</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/2-8-sqmt-overview-using-the-glossary/" target="_blank" rel="noopener noreferrer">Lesson: 2.8 SQMT Overview – Using the Glossary</a> <span class="badge">#4208</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/2-9-sqmt-and-pre-workshop-activities-summary/" target="_blank" rel="noopener noreferrer">Lesson: 2.9 SQMT and Pre-workshop Activities Summary</a> <span class="badge">#4209</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/3-1-risk-assessment-process-overview/" target="_blank" rel="noopener noreferrer">Lesson: 3.1 Risk Assessment Process Overview</a> <span class="badge">#4212</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/3-2-preliminary-risk-identification-activity-what-are-the-risks-to-achieving-quality-in-your-firm/" target="_blank" rel="noopener noreferrer">Lesson: 3.2 Preliminary Risk Identification Activity: What are the risks to achieving quality in your Firm?</a> <span class="badge">#4213</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/4-1-bringing-it-all-together-2/" target="_blank" rel="noopener noreferrer">Lesson: 4.1 Bringing it all Together</a> <span class="badge">#4214</span></summary>
+  </details>
+</details>
+<details class="course" open>
+  <summary><a class="link" href="https://ksaconsultinginccom.local/courses/effective-and-efficient-audits-analytical-procedures/" target="_blank" rel="noopener noreferrer">Course: Performing Analytical Procedures</a> <span class="badge">#1373</span></summary>
+  <div class="mini">Course certificate: <span class="cert">#3003</span></div>
+  <div class="section-label">Lessons</div>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/introduction-and-overview-of-preliminary-substantive-and-final-analytical-procedures/" target="_blank" rel="noopener noreferrer">Lesson: Introduction and overview of preliminary, substantive and final analytical procedures</a> <span class="badge">#1376</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/performing-and-documenting-preliminary-analytics/" target="_blank" rel="noopener noreferrer">Lesson: Performing and documenting preliminary analytics</a> <span class="badge">#1378</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/substantive-analytical-procedures-requirements-overview/" target="_blank" rel="noopener noreferrer">Lesson: Substantive analytical procedures requirements overview</a> <span class="badge">#1380</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/types-of-substantive-analytical-procedures/" target="_blank" rel="noopener noreferrer">Lesson: Types of substantive analytical procedures</a> <span class="badge">#1382</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/examination-and-guidance-on-the-cas-520-5-step-approach-to-performing-substantive-analytics/" target="_blank" rel="noopener noreferrer">Lesson: Examination and guidance on the CAS 520 5-step approach to performing substantive analytics</a> <span class="badge">#1384</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/practical-application-and-documentation-examples/" target="_blank" rel="noopener noreferrer">Lesson: Practical application and documentation examples</a> <span class="badge">#1386</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/performing-and-documenting-final-analytics/" target="_blank" rel="noopener noreferrer">Lesson: Performing and documenting final analytics</a> <span class="badge">#1388</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/bringing-it-all-together-2/" target="_blank" rel="noopener noreferrer">Lesson: Review of key points and action planning</a> <span class="badge">#1390</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/analytical-procedures-course-material/" target="_blank" rel="noopener noreferrer">Lesson: Course Material: Course slides and Preliminary &amp;#038; Final Analytics and CAS 520 5-step Approach Overview</a> <span class="badge">#1392</span></summary>
+  </details>
+</details>
+<details class="course" open>
+  <summary><a class="link" href="https://ksaconsultinginccom.local/courses/practice-management-efficient-file-review/" target="_blank" rel="noopener noreferrer">Course: Practice Management: Efficient File Review</a> <span class="badge">#1422</span></summary>
+  <div class="mini">Course certificate: <span class="cert">#2998</span></div>
+  <div class="section-label">Lessons</div>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/understand-types-of-file-reviews-and-their-requirements/" target="_blank" rel="noopener noreferrer">Lesson: Understand types of file reviews and their requirements</a> <span class="badge">#1602</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/objectives-strategies-and-approach-including-minimizing-file-clutter/" target="_blank" rel="noopener noreferrer">Lesson: Objectives, strategies and approach including minimizing file clutter</a> <span class="badge">#1604</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/objectives-strategies-and-approach-including-illustrative-examples/" target="_blank" rel="noopener noreferrer">Lesson: Objectives, strategies and approach including illustrative examples</a> <span class="badge">#1606</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/examination-of-file-review-tips-and-giving-and-clearing-review-notes/" target="_blank" rel="noopener noreferrer">Lesson: Examination of file review tips and giving and clearing review notes</a> <span class="badge">#1608</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/review-of-key-points-and-action-planning/" target="_blank" rel="noopener noreferrer">Lesson: Review of key points and action planning</a> <span class="badge">#1610</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/file-review-course-material/" target="_blank" rel="noopener noreferrer">Lesson: Course Material: Course slides</a> <span class="badge">#1612</span></summary>
+  </details>
+</details>
+<details class="course" open>
+  <summary><a class="link" href="https://ksaconsultinginccom.local/courses/professional-skepticism/" target="_blank" rel="noopener noreferrer">Course: Professional Skepticism and Critical Thinking</a> <span class="badge">#2037</span></summary>
+  <div class="mini">Course certificate: <span class="cert">#2998</span></div>
+  <div class="section-label">Lessons</div>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/explore-components-of-critical-thinking-and-the-ability-to-reason/" target="_blank" rel="noopener noreferrer">Lesson: Explore components of critical thinking and the ability to reason</a> <span class="badge">#2552</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/review-steps-of-logical-thinking-to-draw-the-right-conclusions/" target="_blank" rel="noopener noreferrer">Lesson: Review steps of logical thinking to draw the right conclusions</a> <span class="badge">#2554</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/understand-components-of-lateral-thinking-including-gathering-facts-and-stepping-outside-your-comfort-zone/" target="_blank" rel="noopener noreferrer">Lesson: Understand components of lateral thinking including stepping outside your comfort zone</a> <span class="badge">#2556</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/appreciate-aspects-of-critical-thinking-and-how-it-builds-stronger-client-relationships/" target="_blank" rel="noopener noreferrer">Lesson: Appreciate aspects of critical thinking to build stronger client relationships</a> <span class="badge">#2558</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/how-to-maintain-an-attitude-of-professional-skepticism-in-engagements/" target="_blank" rel="noopener noreferrer">Lesson: How to maintain an attitude of professional skepticism in engagements</a> <span class="badge">#2560</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/review-of-key-points-and-action-planning-7/" target="_blank" rel="noopener noreferrer">Lesson: Review of key points and action planning</a> <span class="badge">#2562</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/resources-3/" target="_blank" rel="noopener noreferrer">Lesson: Course material: Course slides</a> <span class="badge">#2564</span></summary>
+  </details>
+</details>
+<details class="course" open>
+  <summary><a class="link" href="https://ksaconsultinginccom.local/courses/putting-ethics-into-practice/" target="_blank" rel="noopener noreferrer">Course: Putting Ethics into Practice</a> <span class="badge">#2041</span></summary>
+  <div class="mini">Course certificate: <span class="cert">#2998</span></div>
+  <div class="section-label">Lessons</div>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/introduction-to-practical-ethical-concepts/" target="_blank" rel="noopener noreferrer">Lesson: Introduction to practical ethical concepts</a> <span class="badge">#2630</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/explore-real-life-scenarios-to-better-understand-your-ethical-mindset/" target="_blank" rel="noopener noreferrer">Lesson: Explore fun scenarios to better understand your ethical mindset</a> <span class="badge">#2632</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/appreciate-why-ethics-are-a-choice-and-the-theories-that-drive-differences-in-decision-making/" target="_blank" rel="noopener noreferrer">Lesson: Appreciate why ethics are a choice and how theories drive our decisions</a> <span class="badge">#2634</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/understand-frameworks-to-help-guide-decision-making-and-how-bias-impact-our-decisions/" target="_blank" rel="noopener noreferrer">Lesson: Understand ethics frameworks to guide decision making and how bias impact decisions</a> <span class="badge">#2636</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/appreciate-independence-requirements-and-the-difference-between-threats-and-prohibitions/" target="_blank" rel="noopener noreferrer">Lesson: Appreciate independence requirements including differences between threats and prohibitions</a> <span class="badge">#2638</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/focussing-on-ethics-builds-the-right-firm-culture/" target="_blank" rel="noopener noreferrer">Lesson: Focusing on ethics to build firm culture</a> <span class="badge">#2640</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/review-of-key-points-and-action-planning-8/" target="_blank" rel="noopener noreferrer">Lesson: Review of key points and action planning</a> <span class="badge">#2642</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/putting-ethics-into-practice-course-material-course-slides-and-link-to-other-resources/" target="_blank" rel="noopener noreferrer">Lesson: Putting Ethics into Practice course material: Course slides &amp;#038; links to relevant CPA Canada resourses</a> <span class="badge">#2644</span></summary>
+  </details>
+</details>
+<details class="course" open>
+  <summary><a class="link" href="https://ksaconsultinginccom.local/courses/researching-and-resolving-issues/" target="_blank" rel="noopener noreferrer">Course: Researching and Resolving Issues</a> <span class="badge">#7165</span></summary>
+  <div class="mini">Course certificate: <span class="cert">#2998</span></div>
+  <div class="section-label">Lessons</div>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/review-of-basic-public-practice-concepts-and-introduction-of-the-problem-solving-approach/" target="_blank" rel="noopener noreferrer">Lesson: Review of basic public practice concepts and introduction of the problem-solving approach</a> <span class="badge">#7253</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/defining-the-issue-and-determining-the-underlying-cause/" target="_blank" rel="noopener noreferrer">Lesson: Defining the issue and determining the underlying cause</a> <span class="badge">#7255</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/gathering-information-about-the-issue-determining-resources-needed-and-establishing-an-approach/" target="_blank" rel="noopener noreferrer">Lesson: Gathering information about the issue, determining resources needed and establishing an approach</a> <span class="badge">#7259</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/identifying-alternative-solutions-to-the-issue/" target="_blank" rel="noopener noreferrer">Lesson: Identifying alternative solutions to the issue</a> <span class="badge">#7261</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/developing-criteria-to-analyze-alternative-solutions-and-arriving-at-an-appropriate-conclusion/" target="_blank" rel="noopener noreferrer">Lesson: Developing criteria to analyze alternative solutions and arriving at an appropriate conclusion</a> <span class="badge">#7263</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/performing-final-steps-including-documentation-communication-and-implementation/" target="_blank" rel="noopener noreferrer">Lesson: Performing final Steps including documentation, communication and implementation</a> <span class="badge">#7265</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/review-of-key-concepts-and-action-planning/" target="_blank" rel="noopener noreferrer">Lesson: Review of key concepts and action planning</a> <span class="badge">#7267</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/course-resources-course-slides-and-links-to-other-revelant-resources/" target="_blank" rel="noopener noreferrer">Lesson: Course Resources: Course slides and links to other revelant resources</a> <span class="badge">#7269</span></summary>
+  </details>
+</details>
+<details class="course" open>
+  <summary><a class="link" href="https://ksaconsultinginccom.local/courses/other-canadian-standards-review-hot-topics/" target="_blank" rel="noopener noreferrer">Course: Review Hot Topics</a> <span class="badge">#2033</span></summary>
+  <div class="mini">Course certificate: <span class="cert">#2998</span></div>
+  <div class="section-label">Lessons</div>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/overview-of-the-practitioners-objectives-and-refresher-of-basic-review-concepts/" target="_blank" rel="noopener noreferrer">Lesson: Overview of the practitioner’s objectives and refresher of basic review concepts</a> <span class="badge">#2514</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/understanding-the-entity%e2%80%a8accounting-records-and-systems/" target="_blank" rel="noopener noreferrer">Lesson: Understanding  the entity: accounting records and systems</a> <span class="badge">#2516</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/identifying-areas-where-material-misstatement-is-likely-to-arise/" target="_blank" rel="noopener noreferrer">Lesson: Identifying areas where material misstatement is likely to arise</a> <span class="badge">#2518</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/inquiry-and-analytical-procedures/" target="_blank" rel="noopener noreferrer">Lesson: Inquiry and analytical procedures</a> <span class="badge">#2520</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/specified-and-additional-procedures/" target="_blank" rel="noopener noreferrer">Lesson: Specified and additional procedures</a> <span class="badge">#2522</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/strengthening-documentation/" target="_blank" rel="noopener noreferrer">Lesson: Strengthening documentation</a> <span class="badge">#2524</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/reporting-and-communicating-and-other-related-topics/" target="_blank" rel="noopener noreferrer">Lesson: Reporting and communicating and other related topics</a> <span class="badge">#2526</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/review-of-key-points-and-action-planning-6/" target="_blank" rel="noopener noreferrer">Lesson: Review of key points and action planning</a> <span class="badge">#2528</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/resources-course-slides/" target="_blank" rel="noopener noreferrer">Lesson: Course material: Course slides</a> <span class="badge">#2547</span></summary>
+  </details>
+</details>
+<details class="course" open>
+  <summary><a class="link" href="https://ksaconsultinginccom.local/courses/strengthening-communications-with-clients/" target="_blank" rel="noopener noreferrer">Course: Strengthening Communications with Clients</a> <span class="badge">#2039</span></summary>
+  <div class="mini">Course certificate: <span class="cert">#2998</span></div>
+  <div class="section-label">Lessons</div>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/understand-communication-to-strengthen-relationships-with-clients/" target="_blank" rel="noopener noreferrer">Lesson: Understand communication to strengthen relationships with clients</a> <span class="badge">#2825</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/appreciate-the-impact-of-paraverbal-and-nonverbal-communication-on-messaging/" target="_blank" rel="noopener noreferrer">Lesson: Appreciate the impact of paraverbal and nonverbal communication on messaging</a> <span class="badge">#2827</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/develop-verbal-communication-skills-using-the-star-technique/" target="_blank" rel="noopener noreferrer">Lesson: Develop verbal communication skills using the STAR technique</a> <span class="badge">#2829</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/build-listening-and-questioning-techniques-to-effectively-receive-messages/" target="_blank" rel="noopener noreferrer">Lesson: Build listening and questioning techniques to effectively receive messages</a> <span class="badge">#2831</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/review-of-key-points-and-action-planning-10/" target="_blank" rel="noopener noreferrer">Lesson: Review of key points and action planning</a> <span class="badge">#2833</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/course-material-course-slides/" target="_blank" rel="noopener noreferrer">Lesson: Course material: Course slides</a> <span class="badge">#2835</span></summary>
+  </details>
+</details>
+<details class="course" open>
+  <summary><a class="link" href="https://ksaconsultinginccom.local/courses/the-power-of-efficiency/" target="_blank" rel="noopener noreferrer">Course: The Power of Efficiency</a> <span class="badge">#2850</span></summary>
+  <div class="mini">Course certificate: <span class="cert">#2998</span></div>
+  <div class="section-label">Lessons</div>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/set-the-right-environment-to-tackle-priorities/" target="_blank" rel="noopener noreferrer">Lesson: Set the right environment to tackle priorities</a> <span class="badge">#2904</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/goals-preparing-prioritizing-and-action-planning/" target="_blank" rel="noopener noreferrer">Lesson: Goals: preparing, prioritizing and action planning</a> <span class="badge">#2906</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/the-power-of-routines-to-keep-yourself-on-track/" target="_blank" rel="noopener noreferrer">Lesson: The power of routines to keep yourself on track</a> <span class="badge">#2908</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/increase-efficiency-and-address-and-overcome-procrastination/" target="_blank" rel="noopener noreferrer">Lesson: Increase efficiency and address and overcome procrastination</a> <span class="badge">#2910</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/review-of-key-points-and-action-planning-11/" target="_blank" rel="noopener noreferrer">Lesson: Review of key points and action planning</a> <span class="badge">#2912</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/course-material-course-slides-links-to-relevant-articles/" target="_blank" rel="noopener noreferrer">Lesson: Course material: Course slides &amp;#038; Links to relevant articles</a> <span class="badge">#2914</span></summary>
+  </details>
+</details>
+<details class="course" open>
+  <summary><a class="link" href="https://ksaconsultinginccom.local/courses/understanding-cas-540-auditing-estimates/" target="_blank" rel="noopener noreferrer">Course: Understanding CAS 540 Auditing Estimates</a> <span class="badge">#7163</span></summary>
+  <div class="mini">Course certificate: <span class="cert">#2998</span></div>
+  <div class="section-label">Lessons</div>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/cas-540-overview-and-review-of-key-audit-concepts/" target="_blank" rel="noopener noreferrer">Lesson: CAS 540 overview and review of key audit concepts</a> <span class="badge">#7210</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/identify-rmm-including-understanding-the-entity-afrf-and-system-of-internal-control/" target="_blank" rel="noopener noreferrer">Lesson: Identify RMM including understanding the entity, AFRF and system of internal control</a> <span class="badge">#7212</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/conclude-on-inherent-and-control-risks-at-the-assertion-level-and-identify-significant-risks/" target="_blank" rel="noopener noreferrer">Lesson: Conclude on inherent and control risks at the assertion level and identify significant risks</a> <span class="badge">#7214</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/determine-the-approach-subsequent-events-testing-managements-estimate-or-determine-the-auditors-estimate/" target="_blank" rel="noopener noreferrer">Lesson: Determine the approach: subsequent events, testing management’s estimate or determine the auditor’s estimate</a> <span class="badge">#7216</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/assess-the-audit-evidence-communicate-and-document/" target="_blank" rel="noopener noreferrer">Lesson: Assess the audit  evidence, communicate and document</a> <span class="badge">#7218</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/review-of-key-concepts-and-action-planning-3/" target="_blank" rel="noopener noreferrer">Lesson: Review of key concepts and action planning</a> <span class="badge">#7220</span></summary>
+  </details>
+  <details class="lesson">
+    <summary><a class="link" href="https://ksaconsultinginccom.local/lessons/cas-540-course-resources-course-slides-and-links-to-other-relevant-resources/" target="_blank" rel="noopener noreferrer">Lesson: CAS 540 Course Resources: Course slides and links to other relevant resources</a> <span class="badge">#7222</span></summary>
+  </details>
+</details></div>
+      </div>
+      <div class="panel">
+        <h2>Woo Products Linked to Courses</h2>
+        <table>
+          <thead><tr><th>Product</th><th>Course Links</th></tr></thead>
+          <tbody><tr><td><a class="link" href="https://ksaconsultinginccom.local/product/addressing-fraud-risk-in-assurance-engagements/" target="_blank" rel="noopener noreferrer">Addressing Fraud Risk</a> <span class="badge">#3093</span></td><td><a class="link" href="https://ksaconsultinginccom.local/courses/addressing-fraud-risk-in-assurance-engagements/" target="_blank" rel="noopener noreferrer">Addressing Fraud Risk (#2437)</a></td></tr>
+<tr><td><a class="link" href="https://ksaconsultinginccom.local/product/agreed-upon-procedures-csrs-4400/" target="_blank" rel="noopener noreferrer">Agreed Upon Procedures Engagements</a> <span class="badge">#3094</span></td><td><a class="link" href="https://ksaconsultinginccom.local/courses/agreed-upon-procedures-csrs-4400/" target="_blank" rel="noopener noreferrer">Agreed Upon Procedures: CSRS 4400 (#2035)</a></td></tr>
+<tr><td><a class="link" href="https://ksaconsultinginccom.local/product/audit-hot-topics/" target="_blank" rel="noopener noreferrer">Audit Hot Topics</a> <span class="badge">#7202</span></td><td><a class="link" href="https://ksaconsultinginccom.local/courses/audit-hot-topics/" target="_blank" rel="noopener noreferrer">Audit Hot Topics (#7166)</a></td></tr>
+<tr><td><a class="link" href="https://ksaconsultinginccom.local/product/understanding-cas-540-auditing-estimates/" target="_blank" rel="noopener noreferrer">Auditing Accounting Estimates (CAS 540)</a> <span class="badge">#7206</span></td><td><a class="link" href="https://ksaconsultinginccom.local/courses/understanding-cas-540-auditing-estimates/" target="_blank" rel="noopener noreferrer">Understanding CAS 540 Auditing Estimates (#7163)</a></td></tr>
+<tr><td><a class="link" href="https://ksaconsultinginccom.local/product/compilation-hot-topics-csrs-4200/" target="_blank" rel="noopener noreferrer">Compilation Hot Topics</a> <span class="badge">#7272</span></td><td><a class="link" href="https://ksaconsultinginccom.local/courses/compilation-hot-topics-csrs-4200/" target="_blank" rel="noopener noreferrer">Compilation Hot Topics (CSRS 4200) (#7161)</a></td></tr>
+<tr><td><a class="link" href="https://ksaconsultinginccom.local/product/csqm-in-action/" target="_blank" rel="noopener noreferrer">Design. Implement. Monitor: CSQM 1 in Action a Guided Workshop</a> <span class="badge">#9402</span></td><td><a class="link" href="https://ksaconsultinginccom.local/courses/csqm-in-action/" target="_blank" rel="noopener noreferrer">Design. Implement. Monitor: CSQM 1 in Action a Guided Workshop (#9318)</a></td></tr>
+<tr><td><a class="link" href="https://ksaconsultinginccom.local/product/practice-management-efficient-file-review/" target="_blank" rel="noopener noreferrer">Efficient File Reviews</a> <span class="badge">#3092</span></td><td><a class="link" href="https://ksaconsultinginccom.local/courses/practice-management-efficient-file-review/" target="_blank" rel="noopener noreferrer">Practice Management: Efficient File Review (#1422)</a></td></tr>
+<tr><td><a class="link" href="https://ksaconsultinginccom.local/product/identifying-and-assessing-the-risks-of-material-misstatement-cas-315/" target="_blank" rel="noopener noreferrer">Identifying and Assessing RMM (CAS 315)</a> <span class="badge">#7226</span></td><td><a class="link" href="https://ksaconsultinginccom.local/courses/identifying-and-assessing-the-risks-of-material-misstatement-cas-315/" target="_blank" rel="noopener noreferrer">Identifying and Assessing RMM (CAS 315) (#7167)</a></td></tr>
+<tr><td><a class="link" href="https://ksaconsultinginccom.local/product/effective-and-efficient-audits-journal-entry-testing/" target="_blank" rel="noopener noreferrer">Journal Entry Testing</a> <span class="badge">#3087</span></td><td><a class="link" href="https://ksaconsultinginccom.local/courses/effective-and-efficient-audits-journal-entry-testing/" target="_blank" rel="noopener noreferrer">Effective and Efficient Journal Entry Testing (#657)</a></td></tr>
+<tr><td><a class="link" href="https://ksaconsultinginccom.local/?post_type=product&amp;p=4172" target="_blank" rel="noopener noreferrer">Path to Implementation: CSQM 1</a> <span class="badge">#4172</span></td><td><a class="link" href="https://ksaconsultinginccom.local/courses/path-to-implementation-csqm-1/" target="_blank" rel="noopener noreferrer">Path to Implementation: CSQM 1 (#4196)</a></td></tr>
+<tr><td><a class="link" href="https://ksaconsultinginccom.local/product/effective-and-efficient-audits-analytical-procedures/" target="_blank" rel="noopener noreferrer">Performing Analytical Procedures</a> <span class="badge">#3086</span></td><td><a class="link" href="https://ksaconsultinginccom.local/courses/effective-and-efficient-audits-analytical-procedures/" target="_blank" rel="noopener noreferrer">Performing Analytical Procedures (#1373)</a></td></tr>
+<tr><td><a class="link" href="https://ksaconsultinginccom.local/product/professional-skepticism-and-critical-thinking/" target="_blank" rel="noopener noreferrer">Professional Skepticism and Critical Thinking</a> <span class="badge">#3089</span></td><td><a class="link" href="https://ksaconsultinginccom.local/courses/professional-skepticism/" target="_blank" rel="noopener noreferrer">Professional Skepticism and Critical Thinking (#2037)</a></td></tr>
+<tr><td><a class="link" href="https://ksaconsultinginccom.local/product/putting-ethics-into-practice/" target="_blank" rel="noopener noreferrer">Putting Ethics into Practice</a> <span class="badge">#3088</span></td><td><a class="link" href="https://ksaconsultinginccom.local/courses/putting-ethics-into-practice/" target="_blank" rel="noopener noreferrer">Putting Ethics into Practice (#2041)</a></td></tr>
+<tr><td><a class="link" href="https://ksaconsultinginccom.local/product/researching-and-resolving-issues/" target="_blank" rel="noopener noreferrer">Researching and Resolving Issues</a> <span class="badge">#7249</span></td><td><a class="link" href="https://ksaconsultinginccom.local/courses/researching-and-resolving-issues/" target="_blank" rel="noopener noreferrer">Researching and Resolving Issues (#7165)</a></td></tr>
+<tr><td><a class="link" href="https://ksaconsultinginccom.local/product/effective-and-efficient-engagements-review-hot-topics/" target="_blank" rel="noopener noreferrer">Review Hot Topics</a> <span class="badge">#3084</span></td><td><a class="link" href="https://ksaconsultinginccom.local/courses/other-canadian-standards-review-hot-topics/" target="_blank" rel="noopener noreferrer">Review Hot Topics (#2033)</a></td></tr>
+<tr><td><a class="link" href="https://ksaconsultinginccom.local/product/strengthening-communications-with-clients/" target="_blank" rel="noopener noreferrer">Strengthening Communications with Clients</a> <span class="badge">#3090</span></td><td><a class="link" href="https://ksaconsultinginccom.local/courses/strengthening-communications-with-clients/" target="_blank" rel="noopener noreferrer">Strengthening Communications with Clients (#2039)</a></td></tr>
+<tr><td><a class="link" href="https://ksaconsultinginccom.local/product/the-power-of-efficiency/" target="_blank" rel="noopener noreferrer">The Power of Efficiency</a> <span class="badge">#3095</span></td><td><a class="link" href="https://ksaconsultinginccom.local/courses/the-power-of-efficiency/" target="_blank" rel="noopener noreferrer">The Power of Efficiency (#2850)</a></td></tr></tbody>
+        </table>
+        <h2 style="margin-top:18px;">Orphans</h2>
+        <p class="meta" style="margin-top:-2px;">Not currently linked through the discovered structure.</p>
+        <div class="orphs"><div class="orph"><h3>Lessons</h3><ul><li>Course material: Course slides &amp;amp; links to ACFE Report to the Nations <span class="badge">#6250</span></li><li>CAS Hot Topics course material: Course slides &amp;#038; links to CPA Canada relevant resources <span class="badge">#1790</span></li><li>Review of key points and action planning <span class="badge">#1788</span></li><li>Reporting and communicating (CAS 260/265 &amp;#038; CAS 700/705/706) <span class="badge">#1786</span></li><li>Auditing accounting estimates (CAS 540) <span class="badge">#1784</span></li><li>Audit sampling (CAS 530) <span class="badge">#1782</span></li><li>Auditor’s response and documentation (CAS 230, CAS 330 &amp;#038; CAS 500) <span class="badge">#1780</span></li><li>Identifying and assessing risk of material misstatement including required significant risks (CAS 240 &amp;#038; CAS 315) <span class="badge">#1778</span></li><li>Internal controls including design and implementation (CAS 315) <span class="badge">#1776</span></li><li>Addressing the risk of fraud (CAS 240) <span class="badge">#1774</span></li><li>Overview of the auditor’s objective and refresher of basic audit concepts <span class="badge">#1772</span></li><li>Course Material: Course slides, Implementation Plan Document, Scoping Tool &amp;#038; links to CPA Canada relevant resources <span class="badge">#1221</span></li><li>Review of key points and action planning <span class="badge">#1217</span></li><li>Determine action steps and develop an implementation action plan <span class="badge">#1215</span></li><li>Review of CSRS 4200 requirements and impact on business decisions <span class="badge">#1213</span></li><li>Introduction and overview of CSRS 4200 implementation <span class="badge">#1211</span></li></ul></div>
+<div class="orph"><h3>Topics</h3><ul><li class="muted">None</li></ul></div>
+<div class="orph"><h3>Quizzes</h3><ul><li>certificate test <span class="badge">#10090</span></li><li>AFPC Course Knowledge Retention Quizzes <span class="badge">#10084</span></li></ul></div>
+<div class="orph"><h3>Questions</h3><ul><li>test <span class="badge">#10092</span></li><li>CAS 402 requires the auditor to modify the audit opinion when: <span class="badge">#10082</span></li><li>If a Type 2 SOC report does not cover the full audit period, the auditor may: <span class="badge">#10080</span></li><li>A Type 2 SOC report can be used for control reliance only if: <span class="badge">#10078</span></li><li>When planning to rely on controls at a service organization, the auditor may obtain evidence of operating effectiveness by: <span class="badge">#10076</span></li><li>If the auditor cannot obtain sufficient understanding of controls at the service organization from the entity, which action may be appropriate? <span class="badge">#10074</span></li><li>When identifying and assessing RMM related to a service organization, the auditor must obtain an understanding of: <span class="badge">#10072</span></li><li>Complementary User Entity Controls (CUECs) are: <span class="badge">#10070</span></li><li>A Type 2 SOC report differs from a Type 1 report because it includes: <span class="badge">#10068</span></li><li>A Type 1 SOC report provides assurance on: <span class="badge">#10066</span></li><li>Which of the following is an example of a service organization? <span class="badge">#10064</span></li><li>CAS 402 does NOT change the fact that: <span class="badge">#10062</span></li><li>The auditor of an entity that uses a service organization is referred to as the: <span class="badge">#10060</span></li><li>CAS 402 applies when: <span class="badge">#10058</span></li><li>When using the work of a management’s expert, the auditor must evaluate: <span class="badge">#10056</span></li><li>A management’s expert is: <span class="badge">#10054</span></li><li>If audit evidence supports a range that does not include management’s point estimate, the misstatement is: <span class="badge">#10052</span></li><li>When might the auditor develop an independent point estimate or range? <span class="badge">#10050</span></li><li>An indicator of possible management bias includes: <span class="badge">#10048</span></li><li>When a significant risk exists, the auditor must: <span class="badge">#10046</span></li><li>Which inherent risk factors are most relevant to accounting estimates? <span class="badge">#10044</span></li><li>The objective of CAS 540 is to obtain sufficient appropriate audit evidence about whether: <span class="badge">#10042</span></li><li>What are the three areas the auditor must assess in performing procedures related to how management made their estimate? <span class="badge">#10040</span></li><li>Which of the following is an example of an accounting estimate? <span class="badge">#10038</span></li><li>An accounting estimate is best defined as: <span class="badge">#10036</span></li><li>Written representations related to going concern should include: <span class="badge">#10034</span></li><li>If management’s use of the going concern basis is inappropriate, the auditor should: <span class="badge">#10032</span></li><li>When management includes future actions in its going concern assessment, the auditor must evaluate: <span class="badge">#10030</span></li><li>Which factor increases the risk of management bias in going concern assessments? <span class="badge">#10028</span></li><li>Which of the following is an example of a financial event or condition that may cast significant doubt on going concern? <span class="badge">#10026</span></li><li>If management’s assessment covers less than the required period, the auditor should: <span class="badge">#10024</span></li><li>Under Revised CAS 570, the auditor’s assessment of going concern must cover a period of at least: <span class="badge">#10022</span></li><li>A material uncertainty related to going concern exists when: <span class="badge">#10020</span></li><li>What is the fundamental assumption underlying the going concern basis of accounting? <span class="badge">#10018</span></li><li>An exception in a confirmation response is: <span class="badge">#10016</span></li><li>Which of the following is an example of an alternative audit procedure for non-responses related to accounts receivable? <span class="badge">#10014</span></li><li>When a confirmation response is not received, the auditor is required to: <span class="badge">#10012</span></li><li>Which of the following is a key requirement when using external confirmations? <span class="badge">#10010</span></li><li>When designing confirmation requests, the auditor should consider: <span class="badge">#10008</span></li><li>Negative confirmations provide: <span class="badge">#10006</span></li><li>A negative confirmation request requires a response only when: <span class="badge">#10004</span></li><li>A positive confirmation request requires the confirming party to: <span class="badge">#10002</span></li><li>Which statement is TRUE regarding the use of external confirmations? <span class="badge">#10000</span></li><li>Which of the following best explains why external confirmations are often considered highly reliable audit evidence? <span class="badge">#9998</span></li><li>External confirmations are best described as: <span class="badge">#9996</span></li><li>What is the objective of the auditor when using external confirmation procedures under CAS 505? <span class="badge">#9994</span></li><li>Which of the following best supports meeting the re-performance standard? <span class="badge">#9992</span></li><li>If a control is concluded not to be operating effectively, the auditor should: <span class="badge">#9990</span></li><li>Which statement is true regarding the evaluation of control testing results? <span class="badge">#9988</span></li><li>A deviation in control testing is: <span class="badge">#9986</span></li><li>When controls address a significant risk, the auditor must: <span class="badge">#9984</span></li><li>Which of the following audit procedures is NOT sufficient on its own to test operating effectiveness? <span class="badge">#9982</span></li><li>Tests of controls must be performed when: <span class="badge">#9980</span></li><li>What is the primary purpose of tests of controls? <span class="badge">#9978</span></li><li>In non-statistical sampling, sample size is primarily driven by: <span class="badge">#9976</span></li><li>Audit sampling occurs when the auditor: <span class="badge">#9974</span></li><li>Which statement is true about key item results? <span class="badge">#9972</span></li><li>Key item testing is most appropriate when: <span class="badge">#9970</span></li><li>Which of the following best describes key item testing? <span class="badge">#9968</span></li><li>Which factor does NOT influence the nature, timing, and extent of substantive procedures? <span class="badge">#9966</span></li></ul></div>
+<div class="orph"><h3>Certificates</h3><ul><li>Certificate of Completion QUIZ <span class="badge">#10088</span></li><li>Certificate of Completion – 3.0 Verifiable CPD <span class="badge">#6286</span></li><li>Certificate of Completion – 0.5 Verifiable CPD <span class="badge">#2995</span></li></ul></div></div>
+      </div>
+    </div>
+  </div>
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: 'base',
+      themeVariables: {
+        primaryColor: '#ffffff',
+        primaryTextColor: '#13253b',
+        primaryBorderColor: '#0a7a63',
+        lineColor: '#0a7a63',
+        tertiaryColor: '#eef4ff',
+        fontFamily: 'Inter, Segoe UI, Arial, sans-serif'
+      },
+      flowchart: {
+        curve: 'basis',
+        nodeSpacing: 28,
+        rankSpacing: 44,
+        useMaxWidth: true,
+        htmlLabels: true
+      }
+    });
+  </script>
+</body>
+</html>
