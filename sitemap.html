@@ -57,44 +57,119 @@
     <p class="meta">https://ksaconsultinginccom.local/ • generated 2026-06-03T22:20:50+00:00</p>
     <section class="panel hero-diagram" aria-labelledby="visual-sitemap-heading">
       <h2 id="visual-sitemap-heading">Visual Sitemap</h2>
-      <p class="meta">High-level site structure shown as a Mermaid diagram.</p>
+      <p class="meta">Public IA, rollout timeline, and PD content intake from client email.</p>
       <div class="mermaid">
 flowchart TD
-    KSA[KSA Website]
-    Home[Home]
-    About[About]
-    Services[Services]
-    Contact[Contact]
-    Courses[Courses]
-    SingleCourse[Single Course]
-    SingleLesson[Single Lesson]
-    SingleQuiz[Single Quiz]
-    Account[My Account]
-    Login[Login]
-    MyCourses[My Courses]
-    Cart[Cart]
-    Checkout[Checkout]
-    OrderConfirmation[Order Confirmation]
-    Blog[Blog]
-    BlogPost[Blog Post]
+    Project[ASK KSA Initiatives]
 
-    KSA --> Home
-    KSA --> About
-    KSA --> Services
-    KSA --> Contact
-    KSA --> Courses
-    KSA --> Account
-    KSA --> Cart
-    KSA --> Checkout
-    KSA --> OrderConfirmation
-    KSA --> Blog
+    Project --> WebsiteRevamp
+    Project --> PDLibrary
+    Project --> DeliveryTimeline
+    Project --> IntakeWorkflow
 
-    Courses --> SingleCourse
-    SingleCourse --> SingleLesson
-    SingleCourse --> SingleQuiz
-    Account --> Login
-    Account --> MyCourses
-    Blog --> BlogPost
+    subgraph PublicIA[Public IA - Website Refresh]
+      WebsiteRevamp[Website Revamp]
+      Home[Home Refresh]
+      About[About Refresh]
+      Services[Services Refresh]
+      Resources[Resources Refresh]
+      Blog[Blog Refresh]
+      Contact[Contact Refresh]
+      PDLanding[ASK KSA PD Landing]
+      BrowseAll[Browse All Courses]
+      Categories[Course Categories]
+      SearchFilters[Search and Filters]
+      LearningPaths[Learning Paths]
+      CourseTemplate[Course Page Template]
+      MyLearning[My Learning Dashboard]
+      PDFaq[PD FAQ and Support]
+    end
+
+    subgraph PDContent[ASK KSA PD Content Plan]
+      PDLibrary[PD Library Structure]
+      ExistingCourses[Current Courses]
+      NewCourses[12 New Courses]
+      Course01[Course 01 Placeholder]
+      Course02[Course 02 Placeholder]
+      Course03[Course 03 Placeholder]
+      Course04[Course 04 Placeholder]
+      Course05[Course 05 Placeholder]
+      Course06[Course 06 Placeholder]
+      Course07[Course 07 Placeholder]
+      Course08[Course 08 Placeholder]
+      Course09[Course 09 Placeholder]
+      Course10[Course 10 Placeholder]
+      Course11[Course 11 Placeholder]
+      Course12[Course 12 Placeholder]
+    end
+
+    subgraph Timeline[Delivery Timeline]
+      DeliveryTimeline[Project Milestones]
+      Now[Start Website Updates Now]
+      Aug[Upload Window - Early August]
+      Sep[Launch Goal - September 15]
+      Kickoff[Formal Kickoff Meeting]
+    end
+
+    subgraph Intake[Excel Intake and Publishing Workflow]
+      IntakeWorkflow[Client Course Intake]
+      Excel[Excel Course Sheet]
+      Map[Map Fields to LearnDash]
+      Draft[Create Draft Course Records]
+      QA[QA Review and Fixes]
+      PublishQueue[Publish Queue]
+      Live[Courses Live]
+      Martha[Martha Assists With Upload]
+    end
+
+    WebsiteRevamp --> Home
+    WebsiteRevamp --> About
+    WebsiteRevamp --> Services
+    WebsiteRevamp --> Resources
+    WebsiteRevamp --> Blog
+    WebsiteRevamp --> Contact
+    WebsiteRevamp --> PDLanding
+
+    PDLanding --> BrowseAll
+    PDLanding --> Categories
+    PDLanding --> SearchFilters
+    PDLanding --> LearningPaths
+    PDLanding --> CourseTemplate
+    PDLanding --> MyLearning
+    PDLanding --> PDFaq
+
+    PDLibrary --> ExistingCourses
+    PDLibrary --> NewCourses
+    NewCourses --> Course01
+    NewCourses --> Course02
+    NewCourses --> Course03
+    NewCourses --> Course04
+    NewCourses --> Course05
+    NewCourses --> Course06
+    NewCourses --> Course07
+    NewCourses --> Course08
+    NewCourses --> Course09
+    NewCourses --> Course10
+    NewCourses --> Course11
+    NewCourses --> Course12
+
+    DeliveryTimeline --> Kickoff
+    DeliveryTimeline --> Now
+    DeliveryTimeline --> Aug
+    DeliveryTimeline --> Sep
+
+    IntakeWorkflow --> Excel
+    Excel --> Map
+    Map --> Draft
+    Draft --> QA
+    QA --> PublishQueue
+    PublishQueue --> Live
+    Draft --> Martha
+    Martha --> PublishQueue
+
+    Now --> PDLanding
+    Aug --> PublishQueue
+    Sep --> Live
       </div>
     </section>
     <div class="stats">
